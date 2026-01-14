@@ -249,4 +249,4 @@ def main(onnx_path, model_name="Enh_32"):
     print("Sample values saved to onnx_layer_samples_" + model_name + ".json")
 
 if __name__ == "__main__":
-    main("enh_32.onnx", model_name="Enh_32")
+    main("sep_16.onnx", model_name="Sep_16")
