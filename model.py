@@ -251,17 +251,17 @@ class CausalSuDORMRF(nn.Module):
 
 
 if __name__ == "__main__":
-    in_audio_channels = 2
+    in_audio_channels = 1
     model = CausalSuDORMRF(in_audio_channels=in_audio_channels,
                            out_channels=256,
                            in_channels=512,
                            num_blocks=4,
-                           upsampling_depth=5,
+                           upsampling_depth=4,
                            enc_kernel_size=21,
                            enc_num_basis=512,
                            num_sources=2)
 
-    fs = 44100
+    fs = 8000
     # fs = 8000
     timelength = 1.
     timesamples = int(fs * timelength)
